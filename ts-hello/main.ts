@@ -1,11 +1,6 @@
 
 class Point {
-    private x: number; // field
-    private y: number; // field
-    constructor(x?: number, y?: number) { // optional parameters
-        this.x = x;
-        this.y = y;
-    }
+    constructor(private x?: number, private y?: number) { }
     draw() { // method
         console.log(this.x, this.y);
     }
@@ -13,4 +8,3 @@ class Point {
 
 let point = new Point(23, 56);
 point.draw();
-
