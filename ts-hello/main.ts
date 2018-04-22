@@ -1,18 +1,7 @@
-let count = 5; // type is number
+let message;
+message = 'hi';
 
-count = 'a'; // not valid
+let endsWith = (<string>message).endsWith('i'); // method 1
+let endsWith2 = (message as string).endsWith('i'); // method 2
 
-let oscar; // type any
 
-let score: number;
-let lie: boolean;
-let firstName: string;
-let number: number[];
-let chuck: any[] = [1, true, 'cole'];
-
-const ColorRed = 0;
-const ColorGreen = 1;
-const ColorBlue = 2;
-
-enum Color { Red = 0, Green = 1, Blue = 2 };
-let backgroundColor = Color.Red;
