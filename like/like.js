@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Like = /** @class */ (function () {
     function Like(_numLikes, _isSelected) {
         this._numLikes = _numLikes;
@@ -9,7 +9,7 @@ var Like = /** @class */ (function () {
         this._numLikes += this._isSelected ? -1 : 1;
         this._isSelected = !this._isSelected;
     };
-    Object.defineProperty(Like.prototype, "count", {
+    Object.defineProperty(Like.prototype, "numLikes", {
         get: function () {
             return this._numLikes;
         },
@@ -24,7 +24,7 @@ var Like = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(Like.prototype, "selected", {
+    Object.defineProperty(Like.prototype, "isSelected", {
         get: function () {
             return this._isSelected;
         },

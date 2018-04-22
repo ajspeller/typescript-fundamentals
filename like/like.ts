@@ -7,22 +7,22 @@ export class Like {
         this._isSelected = !this._isSelected;
     }
 
-    get count() {
+    get numLikes() {
         return this._numLikes;
     }
 
-    set count(value) {
+    set numLikes(value) {
         if (value >= 0) {
             this._numLikes = value;
         } else {
             throw new Error('Number of likes must be positive');
         }
     }
-    get selected() {
+    get isSelected() {
         return this._isSelected;
     }
 
-    set selected(value) {
+    set isSelected(value) {
         this._numLikes = value;
     }
 }
