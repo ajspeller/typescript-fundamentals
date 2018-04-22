@@ -1,4 +1,5 @@
-var message;
-message = 'hi';
-var endsWith = message.endsWith('i'); // method 1
-var endsWith2 = message.endsWith('i'); // method 2
+var log = function (message) {
+    console.log(message);
+};
+var doLog = function (message) { return message; };
+var x = function () { return 3; };
