@@ -1,15 +1,12 @@
 var Point = /** @class */ (function () {
-    function Point() {
+    function Point(x, y) {
+        this.x = x;
+        this.y = y;
     }
     Point.prototype.draw = function () {
         console.log(this.x, this.y);
     };
-    Point.prototype.getDistance = function (another) {
-        // ...
-    };
     return Point;
 }());
-var point = new Point();
-point.x = 88;
-point.y = 34;
+var point = new Point(23, 56);
 point.draw();

@@ -2,15 +2,14 @@
 class Point {
     x: number; // field
     y: number; // field
+    constructor(x?: number, y?: number) { // optional parameters
+        this.x = x;
+        this.y = y;
+    }
     draw() { // method
         console.log(this.x, this.y);
     }
-    getDistance(another: Point) { // another method
-        // ...
-    }
 }
 
-let point: Point = new Point();
-point.x = 88;
-point.y = 34;
+let point = new Point(23, 56);
 point.draw();
