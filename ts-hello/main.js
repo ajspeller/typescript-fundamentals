@@ -1,5 +1,17 @@
-var log = function (message) {
-    console.log(message);
+// one method to ensure that the correct type of object is passed
+// inline type annonation
+var drawPoint = function (point) {
+    // ...
 };
-var doLog = function (message) { return message; };
-var x = function () { return 3; };
+drawPoint({
+    x: 2,
+    y: 88
+});
+;
+var drawPoint2 = function (point) {
+    // ...
+};
+drawPoint2({
+    x: 2,
+    y: 88
+});
