@@ -1,17 +1,18 @@
-var number = 1;
-// with var variables are scoped to the nearest function
+let count = 5; // type is number
 
-let count = 2; // ES6 (2015)
-// with let variables are scoped to the nearest block, not the nearest function
+count = 'a'; // not valid
 
-function doSomething() {
-    for (let i = 0; i < 5; i++) {
-        console.log(i);
-    }
-    console.log('finally', i);
-}
+let oscar; // type any
 
+let score: number;
+let lie: boolean;
+let firstName: string;
+let number: number[];
+let chuck: any[] = [1, true, 'cole'];
 
-doSomething();
+const ColorRed = 0;
+const ColorGreen = 1;
+const ColorBlue = 2;
 
-// tsc automatically converts the ts code to ES5
+enum Color { Red = 0, Green = 1, Blue = 2 };
+let backgroundColor = Color.Red;
