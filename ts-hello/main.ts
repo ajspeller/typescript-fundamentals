@@ -1,7 +1,7 @@
 
 class Point {
-    x: number; // field
-    y: number; // field
+    private x: number; // field
+    private y: number; // field
     constructor(x?: number, y?: number) { // optional parameters
         this.x = x;
         this.y = y;
@@ -13,3 +13,4 @@ class Point {
 
 let point = new Point(23, 56);
 point.draw();
+
