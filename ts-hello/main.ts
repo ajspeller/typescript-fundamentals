@@ -1,7 +1,17 @@
-let message = 'aj speller';
+var number = 1;
+// with var variables are scoped to the nearest function
 
-function log(message)  {
-    console.log(message);
+let count = 2; // ES6 (2015)
+// with let variables are scoped to the nearest block, not the nearest function
+
+function doSomething() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+    console.log('finally', i);
 }
 
-log(message);
+
+doSomething();
+
+// tsc automatically converts the ts code to ES5
